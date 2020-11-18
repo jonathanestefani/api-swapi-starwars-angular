@@ -1,0 +1,16 @@
+<div class="conteudo">
+    <div class="tituloList">Lista de Planetas</div>
+    <ul class="list" *ngFor="let item of listPlanetas">
+      <li>Nome: {{item.name}}</li>
+      <li>População: {{item.population}}</li>
+      <li>Clima: {{item.climate}}</li>
+      <li class="text-right"><a [routerLink]="['/detalhesfilmes/', item.filmes]">
+        <i class="fas fa-film"></i>
+        Filmes
+      </a>
+      <a [routerLink]="['/detalhespersonagens/', item.pessoas]">
+        <i class="fas fa-users"></i>
+        Personagens
+      </a></li>
+    </ul>
+  </div>

@@ -1,0 +1,10 @@
+.list {
+    background: linear-gradient(45deg, black, transparent, black);
+    padding: 9px;
+}
+@media only screen and (max-width: 600px) {
+    .list {
+        text-align: justify;
+        padding:10px;
+    }
+}

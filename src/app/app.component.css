@@ -1,0 +1,140 @@
+.cabecalho {
+    background:#333;
+    position: sticky;
+    top:0;
+}
+.menuFilmes {
+    list-style: none;
+}
+.menuFilmes a {
+    color: #f5f3f4;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 3;
+}
+
+.menuVisitante {
+    color: white;
+    font-size: 20px;
+    height: 130px;
+    background: linear-gradient(45deg, #242423, black);
+    line-height: 7;
+    text-align: center;
+    border-bottom: 5px solid #333;
+}
+.menuVisitante i {
+    font-size: 50px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.tituloList {
+    position: sticky;
+    top: 0;
+}
+@media only screen and (min-width: 601px) {
+    .cabecalho {
+        width:100%;
+        height:50px;
+    }
+    .menuFilmes {
+        width:100%;
+        max-width: 1300px;
+        margin:0 auto;
+        list-style: none;
+    }
+    .menuFilmes li {
+        margin:0 2%;
+        display: inline-block;
+    }
+
+    .menuVisitante {
+        display:none;
+    }
+    .inputPesquisa {
+        width: 100%;
+        height: 26px;
+        background: #333;
+        color:white;
+        border: none;
+    }
+    .menuFilmes a {
+        padding:20px;
+    }
+    .menuFilmes a:hover {
+        background: #111;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cabecalho {
+        width:100%;
+        height:65px;
+    }
+    .inputPesquisa {
+        width: 400px;
+        height: 26px;
+        background: #333;
+        border: none;
+    }
+    .menuFilmes {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        border-top: 10px solid #333;
+        border-right: 2px solid white;
+        background: radial-gradient(#ff4800, #660708);
+    }
+    .menuFilmes a:hover {
+        background: linear-gradient(45deg, black, transparent);
+        border-left: 3px solid white;
+        width: calc(100% - 14px);
+    }
+    .hidden {
+        display:none;
+    }
+    .inputPesquisa {
+        display: none;
+    }
+    .pesquisaMobile {
+        display: inline-block !important;
+        width: 88%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+    .pesquisaMobile input {
+        width: 100%;
+        height: 94%;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        color:white;
+    }
+    .pesquisaMobile input:focus {
+        width: 100%;
+        height: 94%;
+        display: inline-block;
+        background: white;
+        outline: none;
+        border: none;
+        color:#333;
+    }
+    .menuFilmes li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    .menuFilmes a {
+        width:calc(100% - 10px);
+        height:100%;
+        padding-left: 10px;
+        display: inline-table;
+    }
+    .menuFilmes a:hover {
+        background: linear-gradient(45deg, black, transparent);
+    }
+}

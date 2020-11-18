@@ -1,0 +1,18 @@
+.list {
+    width: 181px;
+    background: linear-gradient(45deg, black, #333533);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border-bottom: 1px solid;
+  }
+  .list:hover {
+      filter: drop-shadow(2px 1px 2px black);
+  }
+
+@media only screen and (max-width: 600px) {
+    .list {
+        width:89% !important;
+    }
+}
